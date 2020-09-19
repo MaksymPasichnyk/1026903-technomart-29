@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Maxym Pasichnyk](https://up.htmlacademy.ru/htmlcss/29/user/1026903).
-* Наставник: `Владислав Донченко - (https://htmlacademy.ru/profile/id608811)`.
+* Наставник: [Владислав Донченко](https://htmlacademy.ru/profile/id608811).
 
 ---
 
