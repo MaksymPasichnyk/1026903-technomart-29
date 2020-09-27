@@ -243,7 +243,7 @@ color: var(--basic-white);
   line-height: 24px;
 }
 
-.services-btn {
+.services-button {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -391,14 +391,12 @@ color: var(--basic-white);
   background-color: rgba(0, 0, 0, 0.0001);
 }
 
-.services-btn:hover {
+.services-button:hover {
   background-color: var(--intense-blue);
   color: var(--basic-white);
 }
 
-.delivery-button:active,
-.credit-button:active,
-.guaranty-button:active {
+.services-button:active {
   background-color: var(--basic-white);
   color: var(--basic-blue);
 }
