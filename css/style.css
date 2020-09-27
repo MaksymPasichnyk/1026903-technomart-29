@@ -34,8 +34,6 @@ body {
 }
 
 /* header */
-
-
 a {
   text-decoration: none;
 }
@@ -58,10 +56,10 @@ img {
   list-style: none;
 }
 
-.main-navigation {
+.nav {
   background-color: var(--basic-blue);
 }
-.site-navigation,
+.nav-list,
 .footer-navigation,
 .footer-social {
   list-style: none;
@@ -69,7 +67,7 @@ img {
 
 .search-title,
 .header-list-order a,
-.site-navigation a,
+.nav-link,
 .footer-social a {
   color: var(--basic-white);
 }
@@ -99,8 +97,7 @@ img {
   line-height: 24px;
 }
 
-.login-link,
-.registration-link {
+.header-link {
   color: var(--basic-black);
   font-size: 21px;
   line-height: 21px;
@@ -109,34 +106,27 @@ img {
 
 /* main */
 
-.offer-item_materials a,
-.offer-item_tool a,
-.offer-item_technics a,
-.offer-item_sale a,
-.offer-item_delivery a {
+.offer-button {
 color: var(--basic-white);
 }
 
-.offer-item_materials {
+.offer-item_yellow {
   background-color: var(--basic-yellow);
   color: var(--basic-white)
 }
-.offer-item_tool {
+.offer-item_blue {
   background-color: var(--sky-blue);
   color: var(--basic-white)
 }
-.offer-item_technics {
+.offer-item_purple {
   background-color: var(--basic-pink);
   color: var(--basic-white);
 }
-.offer-item_sale {
+.offer-item_green {
   background-color: var(--basic-green);
   color: var(--basic-white);
 }
-.offer-item_delivery {
-  background-color: var(--light-yellow);
-  color: var(--basic-white);
-}
+
 .offers h3 {
   font-weight: bold;
   font-size: 24px;
@@ -224,11 +214,11 @@ color: var(--basic-white);
   background-color: var(--basic-red);
 }
 
-.manufactures-list {
+.brand-list {
   list-style: none;
 }
 
-.manufactures-list li {
+.brand-item {
   border: 1px solid #EAEAEA;
 }
 
@@ -237,41 +227,28 @@ color: var(--basic-white);
 }
 
 .services-title,
-.delivery-title,
-.guarantee-title,
-.credit-title {
+.service-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.delivery-title,
-.guarantee-title,
-.credit-title {
+.service-title {
   color: var(--basic-blue);
 }
 
-.services p {
+.services-text-content {
   font-family: "PT Sans", sans-serif, serif;
   font-size: 13px;
   line-height: 24px;
 }
 
-.services a {
+.services-btn {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-}
-
-.delivery-button {
-  background-color: var(--basic-white);
-  color: var(--basic-blue);
-}
-
-.guaranty-button,
-.credit-button {
- background-color: var(--basic-blue);
- color: var(--basic-white);
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
 }
 
 .about-company-title {
@@ -313,11 +290,11 @@ color: var(--basic-white);
   color: var(--primorse-yellow);
 }
 
-.footer-navigation a {
+.footer-nav-link {
   color: var(--basic-white)
 }
 
-.footer-navigation .primorse-yellow-color {
+.footer-nav-list .primorse-yellow-color {
   color: var(--primorse-yellow);
 }
 
@@ -342,22 +319,20 @@ color: var(--basic-white);
   color: rgba(255, 255, 255, 0.5);
 }
 
-.login-link:hover,
-.registration-link:hover {
+.header-link:hover {
   color: var(--basic-red);
 }
 
-.login-link:active,
-.registration-link:active {
+.header-link:active {
   color: #C5C5C5;
 }
 
-.site-navigation li:hover {
+.nav-item:hover {
   background: var(--intense-blue);
   box-shadow: inset 0px -5px 0px #293449;
 }
 
-.site-navigation li:active {
+.nav-item:active {
   background: #1D2739;
   box-shadow: inset 0px -5px 0px #293449;
 }
@@ -408,17 +383,15 @@ color: var(--basic-white);
   opacity: 0.4;
 }
 
-.manufactures-list-item:hover {
+.brand-item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.manufactures-list-item:active {
+.brand-item:active {
   background-color: rgba(0, 0, 0, 0.0001);
 }
 
-.delivery-button:hover,
-.credit-button:hover,
-.guaranty-button:hover {
+.services-btn:hover {
   background-color: var(--intense-blue);
   color: var(--basic-white);
 }
@@ -430,11 +403,11 @@ color: var(--basic-white);
   color: var(--basic-blue);
 }
 
-.footer-navigation li:hover {
+.footer-nav-item:hover {
   text-decoration: underline;
 }
 
-.footer-navigation li:active {
+.footer-nav-item:active {
   opacity: 0.5;
   text-decoration: none;
 }

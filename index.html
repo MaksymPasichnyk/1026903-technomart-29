@@ -36,18 +36,18 @@
     <a href="tel:78125550555" class="header-mobile">+ 7 (812) 555-05-55</a>
     <address class="header-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 
-    <a href="#" class="login-link">Войти</a>
-    <a href="#" class="registration-link">Регистрация</a>
+    <a href="#" class="header-link login">Войти</a>
+    <a href="#" class="header-link registration">Регистрация</a>
 
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a>Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a>Главная</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Компания</a></li>
+        <li class="nav-item"><a href="catalog.html" class="nav-link">Каталог</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Спецпредложения</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Доставка</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -55,27 +55,27 @@
   <main class="wrapper">
     <section class="offers">
       <h2>Преимущества Техномарта</h2>
-      <article class="offer-item_materials new">
+      <article class="offer-item offer-item_yellow new">
         <h3>Материалы</h3>
         <a href="#" class="offer-button">На любой вкус</a>
       </article>
 
-      <article class="offer-item_tool">
+      <article class="offer-item offer-item_blue">
         <h3>Инструмент</h3>
         <a href="#" class="offer-button">На все случаи</a>
       </article>
 
-      <article class="offer-item_technics">
+      <article class="offer-item offer-item_purple">
         <h3>Техника</h3>
         <a href="#" class="offer-button">Техника</a>
       </article>
 
-      <article class="offer-item_sale">
+      <article class="offer-item offer-item_green">
         <h3>Скидки 50%</h3>
         <a href="#" class="offer-button">На 350 товаров</a>
       </article>
 
-      <article class="offer-item_delivery">
+      <article class="offer-item offer-item_yellow">
         <h3>Доставка</h3>
         <a href="#" class="offer-button">Бесплатно</a>
       </article>
@@ -93,6 +93,7 @@
         <p>Соседям на радость!</p>
         <a href="Catalog.html" class="slider-button button"></a>Открыть каталог</a>
       </article>
+
     </section>
     <div class="wrapper-goods-manufactures">
     <h2 class="popular-goods-title">Популярные товары</h2>
@@ -152,30 +153,31 @@
       <a href="#" class="button manufactures-link">Все производители</a>
       </div>
         <!-- Перечень популярных производителей -->
-        <ul class="manufactures-list">
-          <li class="manufactures-list-item"><a href="#"><img src="https://via.placeholder.com/137x126" alt="Bosch" width="137" height="126"></a></li>
-          <li class="manufactures-list-item"><a href="#"><img src="https://via.placeholder.com/123x40" alt="Makita" width="123" height="40"></a></li>
-          <li class="manufactures-list-item"><a href="#"><img src="https://via.placeholder.com/146x44" alt="DeWALT" width="146" height="44"></a></li>
-          <li class="manufactures-list-item"><a href="#"><img src="https://via.placeholder.com/200x76" alt="Интерскон" width="200" height="76"></a></li>
-          <li class="manufactures-list-item"><a href="#"><img src="https://via.placeholder.com/169x37" alt="Hitachi" width="169" height="37"></a></li>
-          <li class="manufactures-list-item"><a href="#"><img src="https://via.placeholder.com/121x31" alt="LG" width="121" height="31"></a></li>
-          <li class="manufactures-list-item"><a href="#"><img src="https://via.placeholder.com/151x96" alt="AEG" width="151" height="96"></a></li>
-          <li class="manufactures-list-item"><a href="#"><img src="https://via.placeholder.com/204x69" alt="metabo" width="204" height="69"></a></li>
+        <ul class="brand-list">
+          <li class="brand-item"><a href="#" class="brand-link"><img src="https://via.placeholder.com/137x126" alt="Bosch" width="137" height="126"></a></li>
+          <li class="brand-item"><a href="#" class="brand-link"><img src="https://via.placeholder.com/123x40" alt="Makita" width="123" height="40"></a></li>
+          <li class="brand-item"><a href="#" class="brand-link"><img src="https://via.placeholder.com/146x44" alt="DeWALT" width="146" height="44"></a></li>
+          <li class="brand-item"><a href="#" class="brand-link"><img src="https://via.placeholder.com/200x76" alt="Интерскон" width="200" height="76"></a></li>
+          <li class="brand-item"><a href="#" class="brand-link"><img src="https://via.placeholder.com/169x37" alt="Hitachi" width="169" height="37"></a></li>
+          <li class="brand-item"><a href="#" class="brand-link"><img src="https://via.placeholder.com/121x31" alt="LG" width="121" height="31"></a></li>
+          <li class="brand-item"><a href="#" class="brand-link"><img src="https://via.placeholder.com/151x96" alt="AEG" width="151" height="96"></a></li>
+          <li class="brand-item"><a href="#" class="brand-link"><img src="https://via.placeholder.com/204x69"
+                alt="metabo" width="204" height="69"></a></li>
         </ul>
     </section>
 
     <section class="services">
       <h2 class="services-title">Сервисы</h2>
-      <p>
+      <p class="services-text-content">
         Хороший интернет-магазин отличается от плохого не только ценами! <br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
       <!-- -->
-      <a href="#" class="delivery-button">Доставка</a>
-      <a href="#" class="guaranty-button">Гарантия</a>
-      <a href="#" class="credit-button">Кредит</a>
+      <a href="#" class="services-btn btn-delivery">Доставка</a>
+      <a href="#" class="services-btn btn-guarantee">Гарантия</a>
+      <a href="#" class="services-btn btn-credit">Кредит</a>
     <article class="services-content-delivery">
-      <h3 class="delivery-title">Доставка</h3>
+      <h3 class="service-title delivery_title">Доставка</h3>
       <p>Мы с удовольствием доставим ваш товар прямо <br>
         к вашему подъезду совершенно бесплатно! <br>
         Ведь мы неплохо заработаем <br>
@@ -183,14 +185,14 @@
       </p>
     </article>
     <article class="services-content-guarantee visibility-hidden">
-      <h3 class="guarantee-title">Гарантия</h3>
+      <h3 class="service-title guarantee-title">Гарантия</h3>
       <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
         возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
         восстановите как-нибудь сами.
       </p>
     </article>
     <article class="services-content-credit visibility-hidden">
-      <h3 class="credit-title">Кредит</h3>
+      <h3 class="service-title credit-title">Кредит</h3>
       <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
     </article>
       </section>
@@ -229,16 +231,16 @@
       +7 (812) 555-05-55
     </address>
 
-    <ul class="footer-navigation">
-      <li class="navigation-item"><a href="#">Компания</a></li>
-      <li class="navigation-item"><a href="#">Новости</a></li>
-      <li class="navigation-item"><a href="Catalog.html">Каталог</a></li>
-      <li class="navigation-item"><a href="#">Доставка</a></li>
-      <li class="navigation-item"><a href="#">Контакты</a></li>
-      <li class="navigation-item"><a href="#" class="primorse-yellow-color">Материалы</a></li>
-      <li class="navigation-item"><a href="#" class="primorse-yellow-color">Техника</a></li>
-      <li class="navigation-item"><a href="#" class="primorse-yellow-color">Инструмент</a></li>
-      <li class="navigation-item"><a href="#" class="primorse-yellow-color">Спецпредложения</a>
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item"><a href="#" class="footer-nav-link">Компания</a></li>
+      <li class="footer-nav-item"><a href="#" class="footer-nav-link">Новости</a></li>
+      <li class="footer-nav-item"><a href="Catalog.html" class="footer-nav-link">Каталог</a></li>
+      <li class="footer-nav-item"><a href="#" class="footer-nav-link">Доставка</a></li>
+      <li class="footer-nav-item"><a href="#" class="footer-nav-link">Контакты</a></li>
+      <li class="footer-nav-item"><a href="#" class="footer-nav-link primorse-yellow-color ">Материалы</a></li>
+      <li class="footer-nav-item"><a href="#" class="footer-nav-link primorse-yellow-color">Техника</a></li>
+      <li class="footer-nav-item"><a href="#" class="footer-nav-link primorse-yellow-color">Инструмент</a></li>
+      <li class="footer-nav-item"><a href="#" class="footer-nav-link primorse-yellow-color">Спецпредложения</a>
       </li>
     </ul>
 
@@ -247,13 +249,13 @@
 
     <!-- Социальные сети -->
     <ul class="footer-social">
-      <li class="social-item vk">
+      <li class="social-item">
         <a href="https://www.vk.com" target="_blank">Вконтакте</a>
       </li>
-      <li class="social-item facebook">
+      <li class="social-item">
         <a href="https://www.facebook.com" target="_blank">Фейсбук</a>
       </li>
-      <li class="social-item instagram">
+      <li class="social-item">
         <a href="https://www.instagram.com" target="_blank">Инстаграм</a>
       </li>
     </ul>
