@@ -18,6 +18,8 @@
   --intense-blue: #293449;
   --special: rgba(0, 0, 0, .001);
   --primorse-yellow: #FFD180;
+  --light-blue: #f1f5f7;
+  --beige-color: #F7F3EC; 
 }
 
 body {
@@ -43,6 +45,10 @@ img {
   height: auto;
 }
 
+.main-header {
+  background-color: var(--light-blue);
+}
+
 .main-header-logo {
   background-color: var(--basic-red);
   color: var(--basic-white);
@@ -54,6 +60,10 @@ img {
 
 .header-list-order {
   list-style: none;
+}
+
+.header-mobile {
+  border: 3px solid var(--basic-white);
 }
 
 .nav {
@@ -76,6 +86,15 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-green);
 }
+
+.basket-link {
+  font-family: "Cuprum", sans-serif, serif;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--basic-red);
+}
+
+
 
 .header-title {
   color: var(--basic-red);
@@ -105,6 +124,8 @@ img {
 }
 
 /* main */
+
+
 
 .offer-button {
 color: var(--basic-white);
@@ -417,3 +438,137 @@ color: var(--basic-white);
 .footer-social li:active {
 
 }
+
+/* catalog page */
+
+.user-block {
+  background-color: var(--basic-white);
+
+}
+
+.user-logged {
+color: var(--basic-black);
+ font-family: "Cuprum" sans-serif, serif;
+ font-size: 21px;
+ line-height: 21px;
+}
+
+.user-link {
+   font-family: "Cuprum" sans-serif, serif;
+   color: var(--basic-blue);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.breadcrumbs {
+  text-transform: uppercase;
+  list-style: none;
+  line-height: 18px;
+  font-family: "PT Sans", sans-serif, serif;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: var(--basic-dark);
+}
+
+.drill-title {
+  background-color: var(--light-blue);
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 5px 20px;
+}
+
+.filter {
+  background-color: #F7F3EC;
+  font-size: 13px;
+  line-height: 18px;
+    font-family: "PT Sans", sans-serif, serif;
+}
+
+.filter-name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.range-price,
+.price-max,
+.price-min,
+.sort-option,
+.info-drill {
+  background-color: var(--beige-color);
+}
+
+.companies-list,
+.supply-list,
+.sort-list {
+  list-style: none;
+}
+
+.companies-item {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase
+}
+
+.companies-item label,
+.supply-item label {
+  color: var(--basic-grey);
+}
+
+.button_show {
+  font-size: 13px;
+  line-height: 18px;
+    font-family: "PT Sans", sans-serif, serif;
+    border: 1px solid var(--light-grey);
+    background-color: var(--basic-white)
+}
+
+.sort-option {
+
+}
+
+.sort-title {
+      font-family: "PT Sans", sans-serif, serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sort-item a {
+  font-family: "PT Sans", sans-serif, serif;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.3;
+  color: var(--basic-black);
+  text-decoration: underline dashed var(--basic-red);
+}
+
+.sort-item:first-child a {
+  color: var(--basic-red);
+  opacity: 1;
+  text-decoration: none;
+}
+
+.info-drill-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.info-drill-text {
+  font-size: 13px;
+  line-height: 24px;
+    font-family: "PT Sans", sans-serif, serif;
+}
+
