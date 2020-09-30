@@ -163,6 +163,16 @@ color: var(--basic-white);
   background-color: black;
   font-size: 14px;
 }
+
+
+.slider_drills {
+  background: url(/img/background-slider.jpg) no-repeat;
+}
+
+.slider_perforators {
+  background: url(/img/Layer\ 99.jpg) no-repeat;
+}
+
 .slider h2 {
   font-weight: bold;
   font-size: 36px;
@@ -296,7 +306,7 @@ color: var(--basic-white);
 }
 
 .visibility-hidden {
-  /* display: hidden; */
+  display: none;
 }
 
 
@@ -315,9 +325,14 @@ color: var(--basic-white);
   color: var(--basic-white)
 }
 
+.footer-nav-list {
+  list-style: none;
+}
+
 .footer-nav-list .primorse-yellow-color {
   color: var(--primorse-yellow);
 }
+
 
 
 /* состояния ссылок */
@@ -535,8 +550,25 @@ color: var(--basic-black);
     background-color: var(--basic-white)
 }
 
-.sort-option {
+.pagination {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+}
 
+.pagination-item {
+  color: var(--basic-black);
+  border: 1px solid var(--light-grey);
+  border-radius: 2px;
+}
+
+.pagination-item-current {
+  background-color: var(--basic-red);
+}
+
+.feedback-button {
+  color: var(--primorse-yellow);
 }
 
 .sort-title {
@@ -560,15 +592,19 @@ color: var(--basic-black);
   text-decoration: none;
 }
 
-.info-drill-title {
+.info-product-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.info-drill-text {
+.info-product-text {
   font-size: 13px;
   line-height: 24px;
     font-family: "PT Sans", sans-serif, serif;
+}
+
+.design-link {
+  color: var(--primorse-yellow);
 }
 
