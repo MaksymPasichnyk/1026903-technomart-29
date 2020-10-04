@@ -166,11 +166,11 @@ color: var(--basic-white);
 
 
 .slider_drills {
-  background: url(/img/background-slider.jpg) no-repeat;
+  background: url(../img/background-slider2.jpg) no-repeat;
 }
 
 .slider_perforators {
-  background: url(/img/Layer\ 99.jpg) no-repeat;
+  background: url(../img/background-slider1.jpg) no-repeat;
 }
 
 .slider h2 {
