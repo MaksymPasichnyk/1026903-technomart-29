@@ -24,7 +24,6 @@
 }
 
 body {
-  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
@@ -54,6 +53,7 @@ img {
 .container {
   width: 940px;
   margin: 0 auto;
+  padding: 0 130px;
 }
 
 .page-body {
@@ -86,7 +86,6 @@ img {
 .header-columns {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 158px 60px;
   margin-bottom: 60px;
 }
 
@@ -117,8 +116,7 @@ img {
 .nav {
   background-color: var(--basic-blue);
   box-shadow: inset 0px -5px 0px #293449;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: 1 / -1;
 }
 
 .nav-list {
@@ -131,6 +129,11 @@ img {
   margin-right: 56px;
 }
 
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 
 .nav-list,
@@ -221,7 +224,7 @@ color: var(--basic-white);
 
 .offers {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 123px 123px 123px;
   gap: 20px;
 }
@@ -281,7 +284,6 @@ color: var(--basic-white);
 .popular-goods-list {
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
-  grid-template-rows: 318px;
   gap: 20px;
   padding: 0;
   margin-bottom: 70px;
@@ -329,6 +331,9 @@ color: var(--basic-white);
 .popular-goods-drill {
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 5px;
+
 }
 .drill-description {
   font-weight: bold;
@@ -422,7 +427,7 @@ color: var(--basic-white);
 
 .about-company-columns {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 2fr 1fr;
   padding-bottom: 70px;
 }
 
@@ -536,7 +541,9 @@ color: var(--basic-white);
 }
 
 .popular-goods-drill:hover {
-  border: 1px solid #EAEAEA;
+  box-shadow: 0 10px 25px 0 #8E8E8E;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.4);
+  border-color: transparent;
 }
 
 .buy-button:hover {
