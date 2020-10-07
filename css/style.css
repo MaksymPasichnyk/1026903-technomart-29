@@ -85,7 +85,7 @@ img {
 }
 .header-columns {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 60px;
 }
 
@@ -633,6 +633,7 @@ color: var(--basic-black);
   list-style: none;
   line-height: 18px;
   font-family: "PT Sans", sans-serif, serif;
+  margin: 20px 0;
 }
 
 .breadcrumbs a {
@@ -648,12 +649,27 @@ color: var(--basic-black);
   color: var(--basic-dark);
 }
 
+.catalog-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+ 
+}
+
+.popular-goods-list {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 20px;
+}
+
+
 .drill-title {
   background-color: var(--light-blue);
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
   padding: 5px 20px;
+  margin-bottom: 20px;
 }
 
 .filter {
