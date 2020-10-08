@@ -94,32 +94,37 @@
       <li class="breadcrumbs-item breadcrumbs-current">Перфораторы</li>
     </ul>
 
+    </div>
+
     <div class="drill-title">
+      <div class="container">
       <h2>ПЕРФОРАТОРЫ</h2>
       </div>
     </div>
 
     <div class="container">
     <div class="catalog-columns">
-    <section class="filter-section">
+      
       <!-- фильтр -->
       <form action="#" method="post">
+        <div class="filter-columns">
         <div class="filter">
-          <span>ФИЛЬТР:</span>
+          ФИЛЬТР:
         </div>
-        <label class="filter-name" for="range-price">ЦЕНА:</label>
-        <div class="range-price">
+        
+        <section class="range-price">
+          <label class="filter-name" for="range-price">ЦЕНА:</label>
           <input type="range" min="0" max="10" value="8" id="range-price">
-        </div>
-        <div class="filter-range-price">
-          <input type="text" value="0" name="price-min" class="price-min">
-          <span>
-            -
-          </span>
-          <input type="text" value="30000" name="price-max" class="price-max">
-        </div>
+           <div class="filter-range-price">
+             <input type="text" value="0" name="price-min" class="price-min">
+             <span>
+               -
+             </span>
+             <input type="text" value="30000" name="price-max" class="price-max">
+           </div>
+        </section>
 
-        <div class="companies">
+        <section class="companies">
           <h3 class="filter-name">ПРОИЗВОДИТЕЛИ:</h3>
           <ul class="companies-list">
             <li class="companies-item">
@@ -143,9 +148,9 @@
               <label for="hitachi">HITACHI</label>
             </li>
           </ul>
-        </div>
+        </section>
 
-        <div class="filter-supply">
+        <section class="filter-supply">
           <h3 class="filter-name">ПИТАНИЕ:</h3>
           <ul class="supply-list">
             <li class="supply-item">
@@ -157,12 +162,11 @@
               <label for="item2">СЕТЕВЫЕ</label>
             </li>
           </ul>
-        </div>
-
+        </section>
         <button class="button_show">ПОКАЗАТЬ</button>
+        </div>
       </form>
      
-    </section>
      
 
     <section class="sort-container">

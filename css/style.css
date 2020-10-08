@@ -628,12 +628,17 @@ color: var(--basic-black);
   line-height: 18px;
 }
 
+.page-catalog {
+  display: grid;
+  row-gap: 20px;
+}
+
 .breadcrumbs {
   text-transform: uppercase;
   list-style: none;
   line-height: 18px;
   font-family: "PT Sans", sans-serif, serif;
-  margin: 20px 0;
+  margin: 0;
 }
 
 .breadcrumbs a {
@@ -669,7 +674,6 @@ color: var(--basic-black);
   font-size: 30px;
   line-height: 30px;
   padding: 5px 20px;
-  margin-bottom: 20px;
 }
 
 .filter {
@@ -684,6 +688,11 @@ color: var(--basic-black);
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.filter-columns {
+  display: grid;
+  row-gap: 15px;
 }
 
 .range-price,
@@ -724,6 +733,9 @@ color: var(--basic-black);
   font-size: 13px;
   line-height: 18px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 285px;
 }
 
 .pagination-item {
@@ -744,6 +756,17 @@ color: var(--basic-black);
       font-family: "PT Sans", sans-serif, serif;
   font-size: 13px;
   line-height: 18px;
+  margin: auto 0;
+}
+
+.sort-option {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.sort-list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
 }
 
 .sort-item a {
