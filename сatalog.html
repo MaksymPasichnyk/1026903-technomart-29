@@ -13,24 +13,17 @@
 
 <body class="page-body inner-page">
   <header class="main-header">
-    <div class="container">
     <div class="header-top">
+      <div class="container">
         <div class="header-top-columns">
           <a class="main-header-logo">ТЕХНОМАРТ</a>
 
-          <div class="search-form">
-            <span class="search-title">Поиск:</span>
-          </div>
-
-          <ul class="header-list-order">
-            <li class="list-order-item">
-              <a href="#" class="bookmarks-link">Закладки: 0</a>
-            </li>
-            <li class="list-order-item">
-              <a href="#" class="basket-link">Корзина: 0</a>
-            </li>
-          </ul>
-
+          <form action="#" method="get" class="search-form">
+            <input type="search" name="search" placeholder="Поиск:">
+            <label class="search" for="search"></label>
+          </form>
+          <a href="#" class="bookmark-link">Закладки: 0</a>
+          <a href="#" class="basket-link">Корзина: 0</a>
           <a href="#" class="order-link">Оформить заказ</a>
         </div>
       </div>
@@ -38,47 +31,49 @@
 
     <div class="container">
       <div class="header-columns">
-        <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <div>
+        <div class="header-title">
+          <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        </div>
+        <div class="header-contacts">
           <a href="tel:78125550555" class="header-mobile">+ 7 (812) 555-05-55</a>
-          <address class="header-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
-         <div class="user-block">
-           <a href="#" class="user-logged">Равшан Джамшутович</a>
-         <a href="#" class="user-link">Мои заказы</a>
-         <span class="point"></span>
-         <a href="#" class="user-link">Личный кабинет</a>
+        <div class="user-block">
+          <a href="#" class="user-logged">Равшан Джамшутович</a>
+          <a href="#" class="log-out"></a>
+          <a href="#" class="user-link">Мои заказы</a>
+          <span class="point"></span>
+          <a href="#" class="user-link">Личный кабинет</a>
         </div>
-
-        <nav class="nav">
-          <ul class="nav-list list-reset">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Главная</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Компания</a>
-            </li>
-            <li class="nav-item">
-              <a>Каталог</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Новости</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Спецпредложения</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Доставка</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <nav class="nav">
+        <ul class="nav-list list-reset">
+          <li class="nav-item">
+            <a class="nav-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Компания</a>
+          </li>
+          <li class="nav-item">
+            <a href="catalog.html" class="nav-link">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Новости</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Спецпредложения</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
-  
+
   <main class="page-catalog wrapper">
     <div class="container">
     <ul class="breadcrumbs">
@@ -96,8 +91,8 @@
 
     </div>
 
+     <div class="container">
     <div class="drill-title">
-      <div class="container">
       <h2>ПЕРФОРАТОРЫ</h2>
       </div>
     </div>
@@ -112,14 +107,17 @@
           ФИЛЬТР:
         </div>
         
-        <section class="range-price">
-          <label class="filter-name" for="range-price">ЦЕНА:</label>
-          <input type="range" min="0" max="10" value="8" id="range-price">
+        <section class="option-price">
+          <h3 class="price">ЦЕНА:</h3>
+          <div class="range-price">
+          <div class="range-line">
+          <div class="range-circle circle1"></div>
+          <div class="range-circle circle2"></div>
+          </div>
+          </div>
            <div class="filter-range-price">
              <input type="text" value="0" name="price-min" class="price-min">
-             <span>
-               -
-             </span>
+             <div class="price-element">-</div>
              <input type="text" value="30000" name="price-max" class="price-max">
            </div>
         </section>
@@ -172,7 +170,7 @@
     <section class="sort-container">
         <div class="assortment-columns">
       <div class="sort-option">
-        <span class="sort-title">СОРТИРОВКА:</span>
+        <h3 class="sort-title">СОРТИРОВКА:</h3>
         <ul class="sort-list">
           <li class="sort-item">
             <a href="#">ПО ЦЕНЕ:</a>
@@ -280,17 +278,17 @@
       </ul>
 
       <ul class="pagination">
-        <li>
-          <a href="" class="pagination-item pagination-item-current">1</a>
+        <li class="pagination-item pagination-item-current">
+          <a href="">1</a>
         </li>
-        <li>
-          <a href="" class="pagination-item">2</a>
+        <li class="pagination-item">
+          <a href="">2</a>
         </li>
-        <li>
-          <a href="" class="pagination-item">3</a>
+        <li class="pagination-item">
+          <a href="">3</a>
         </li>
-        <li>
-          <a href="" class="pagination-item">СЛЕДУЮЩАЯ</a>
+        <li class="pagination-item">
+          <a href="">СЛЕДУЮЩАЯ</a>
         </li>
       </ul>
       </div>
@@ -298,8 +296,8 @@
   </div>
   </div>
 
-    <div class="container">
     <article class="info-product">
+      <div class="container">
       <h2 class="info-product-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
       <p class="info-product-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
         долбления отверстий в кирпиче, бетоне и камне.
@@ -310,9 +308,8 @@
         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
         ударная дрель.
       </p>
-      
+      </div>
     </article>
-    </div>
   
   </main>
 
@@ -320,9 +317,9 @@
      <div class="container">
        <!-- Логотип и Контакты -->
        <div class="footer-top-columns">
-         <div>
-           <a class="main-footer-logo"><img src="https://via.placeholder.com/220x47" alt="Техномарт" width="220"
-               height="47"></a>
+         <div class="footer-top">
+           <a class="main-footer-logo">ТЕХНОМАРТ</a>
+
            <address class="main-footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
              <br>
              +7 (812) 555-05-55
@@ -371,13 +368,13 @@
            <!-- Социальные сети -->
            <ul class="footer-social">
              <li class="social-item">
-               <a href="#" target="_blank">Вконтакте</a>
+               <a href="#" target="_blank"></a>
              </li>
              <li class="social-item">
-               <a href="h#" target="_blank">Фейсбук</a>
+               <a href="h#" target="_blank"></a>
              </li>
              <li class="social-item">
-               <a href="#" target="_blank">Инстаграм</a>
+               <a href="#" target="_blank"></a>
              </li>
            </ul>
 
