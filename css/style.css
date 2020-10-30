@@ -163,13 +163,6 @@ border: none;
   
 }
 
-
-
-.header-mobile {
-  border: 3px solid var(--basic-white);
-
-}
-
 .nav {
   background-color: var(--basic-blue);
   box-shadow: inset 0px -5px 0px #293449;
@@ -363,6 +356,7 @@ border: none;
 
 
 .header-mobile {
+   border: 3px solid var(--basic-white);
   display: block;
   text-align: center;
   margin-bottom: 3px;
@@ -377,8 +371,8 @@ border: none;
 
 .icon-phone {
   position: absolute;
-         top: 16px;
-    left: 360px;
+  top: 13px;
+  left: 34px;
 
 }
 
@@ -529,7 +523,7 @@ margin: 0 16px;
 .slider-button {
   z-index: 1;
   position: absolute;
-  bottom: 27px;
+  bottom: -152px;
   left: 24px;
   background-color: var(--basic-red);
 }
