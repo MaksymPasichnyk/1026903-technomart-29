@@ -70,7 +70,8 @@ img {
 
 }
 
-.main-header-logo {
+.main-header-logo,
+.catalog-header-logo {
   background-color: var(--basic-red);
   color: var(--basic-white);
   position: relative;
@@ -1136,7 +1137,7 @@ line-height: 18px;
 }
 
 
-.main-header-logo:active {
+.catalog-header-logo:active {
   background-color: var(--intense-red);
   box-shadow: 0 5px 0 0 #971e26;
 }
@@ -1194,19 +1195,24 @@ line-height: 18px;
   margin: 6px 0;
 }
 
-.popular-goods-drill:hover .popup {
-  display: block;
-  position: absolute;
+.popular-goods-drill:hover .popular-img,
+.popular-goods-drill:focus .popular-img,
+.popular-goods-drill:focus-within .popular-img {
+  visibility: hidden;
+}
+
+.popular-goods-drill:hover .popup,
+.popular-goods-drill:focus .popup,
+.popular-goods-drill:focus-within .popup {
   display: flex;
   flex-direction: column;
   width: 135px;
   height: 84px;
   padding: 41px;
+  clip-path: none;
+  clip: inherit;
 }
 
-.popular-goods-drill:hover .popular-img {
-  visibility: hidden;
-}
 
 .buy-button:hover {
   background: #5FBB2D;
