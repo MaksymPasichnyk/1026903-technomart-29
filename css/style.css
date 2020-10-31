@@ -172,10 +172,13 @@ border: none;
 
 .nav-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 60px;
   text-align: center;
   padding: 0;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .nav-item {
@@ -193,13 +196,6 @@ border: none;
   padding-right: 28px;
 }
 
-.nav-item:first-of-type {
-  margin-left: 53px;
-}
-
-.nav-item:last-of-type {
-  margin-right: 53px;
-}
 
 
 .list-reset {
