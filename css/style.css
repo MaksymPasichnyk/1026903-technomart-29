@@ -23,8 +23,9 @@
   --light-green2: #5bb42b;
   --cloudy-white: #f1f1f1;
   --light-red: #b42731;
-  --dark-blue: #283136;
+  --second-blue: #283136;
   --dark-green: #518534;
+  --light-green3: #5FBB2D;
   --blue-black: #1D2739;
   --lighter-red: #971e26;
 }
@@ -58,7 +59,7 @@ img {
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0 130px;
+  padding: 0 10px;
   position: relative;
 }
 
@@ -109,7 +110,7 @@ img {
   font-size: 18px;
   line-height: 18px;
   background-color: var(--dark-blue);
-  color: var(--basic-white);
+  color: var(--basic-black);
   height: 100%;
   width: 100%;
 }
@@ -167,12 +168,16 @@ img {
 .nav-list {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   text-align: center;
   padding: 0;
   flex-wrap: wrap;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.nav-catalog {
+  margin-top: -4px;
 }
 
 .nav-item {
@@ -1213,7 +1218,6 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 620px;
   line-height: 34px;
   margin-bottom: 74px;
   margin-top: 0;
@@ -1226,6 +1230,11 @@ img {
   font-size: 18px;
   line-height: 24px;
   margin-top: 34px;
+}
+
+.footer-nav-item:nth-of-type(5),
+.footer-nav-item:nth-of-type(9) {
+  margin-right: 0;
 }
 
 .footer-nav-item:nth-of-type(6) {
@@ -1278,9 +1287,13 @@ img {
   box-shadow: 0 5px 0 0 var(--lighter-red);
 }
 
-.order-link:active,
 .bookmarks-link:active,
 .basket-link:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.order-link:active {
+  background-color: var(--basic-green);
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1297,13 +1310,17 @@ img {
 }
 
 .nav-item:hover {
-  background: var(--intense-blue);
-  box-shadow: inset 0px -5px 0px #293449;
+  background: var(--dark-blue);
+  box-shadow: inset 0px -5px 0px var(--intense-blue);
 }
 
 .nav-item:active {
-  opacity: 0.6;
   box-shadow: inset 0px -5px 0px var(--intense-blue);
+}
+
+.nav-item:active .nav-link {
+  background-color: var(--blue-black);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .offer-button:hover {
@@ -1352,7 +1369,7 @@ img {
 }
 
 .buy-button:hover {
-  background: var(--basic-green);
+  background: var(--light-green3);
   box-shadow: inset 0px -3px 0px var(--dark-green);
   border-radius: 2px;
 }
@@ -1410,8 +1427,10 @@ img {
   position: relative;
 }
 
-.user-block:active {
-  opacity: 0.5;
+.user-links {
+  position: relative;
+  margin-top: 7px;
+  margin-left: 3px;
 }
 
 .user-info svg {
@@ -1428,7 +1447,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   background-color: var(--basic-white);
-  padding: 12px 20px 7px 57px;
+  padding: 15px 20px 11px 53px;
 }
 
 .user-logged:hover+svg path {
@@ -1440,7 +1459,7 @@ img {
 }
 
 .user-logged:active {
-  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .user-logged:active+svg path {
@@ -1481,25 +1500,25 @@ img {
   border-radius: 50%;
   background-color: var(--basic-blue);
   position: absolute;
-  top: 59px;
-  right: 163px;
+  top: 10px;
+  right: 138px;
 }
 
 .log-out {
-  background: url("../img/logout-icon.svg") no-repeat center;
-  width: 37px;
-  height: 47px;
+  background: url("../img/logout-icon.svg") no-repeat 4px 15px;
+  width: 40px;
   background-color: var(--basic-white);
   height: 100%;
 }
 
 .log-out:hover {
-  background: url("../img/logout-icon-hover.svg") no-repeat center;
+  background: url("../img/logout-icon-hover.svg") no-repeat 4px 15px;
   background-color: var(--basic-white);
 }
 
 .log-out:active {
-  opacity: 0.5;
+  background: url("../img/logout-icon.svg") no-repeat 4px 15px;
+  background-color: var(--basic-white);
 }
 
 .page-catalog {
