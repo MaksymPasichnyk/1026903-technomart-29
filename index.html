@@ -102,7 +102,7 @@
             <a href="#" class="nav-link">Компания</a>
           </li>
           <li class="nav-item">
-            <a href="/сatalog.html" class="nav-link">Каталог</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Новости</a>
@@ -120,7 +120,6 @@
       </nav>
     </div>
   </header>
-
 
   <main class="main-wrapper">
     <h1 class="visually-hidden">Проект Техномарт</h1>
@@ -235,20 +234,20 @@
               <div class="slider-content">
                 <h2>Перфораторы</h2>
                 <p>Настоящие мужские игрушки</p>
-                <img src="./img/background-slider1.jpg" alt="Перфораторы">
+                <img src="./img/background-slider1.jpg" alt="Перфораторы" width="620" height="256">
               </div>
               <div class="slider-button">
-                <a href="сatalog.html">открыть каталог</a>
+                <a href="catalog.html">открыть каталог</a>
               </div>
             </div>
             <div class="slider-item slider-drills visually-hidden">
               <div class="slider-content">
                 <h2>Дрели</h2>
                 <p>Соседям на радость!</p>
-                <img src="./img/background-slider2.jpg" alt="Дрели">
+                <img src="./img/background-slider2.jpg" alt="Дрели" width="620" height="256">
               </div>
               <div class="slider-button">
-                <a href="сatalog.html">открыть каталог</a>
+                <a href="catalog.html">открыть каталог</a>
               </div>
             </div>
           </div>
@@ -299,6 +298,7 @@
           <h3 class="drill-description">Перфоратор BOSCH
             <br>
             BFG 9000</h3>
+
           <p class="drill-old-price">32500 Р.</p>
           <p class="drill-price">25500 Р.</p>
         </li>
@@ -368,7 +368,7 @@
             <a href="#" class="brand-link"><img src="./img/dewalt.png" alt="DeWALT" width="146" height="44"></a>
           </li>
           <li class="brand-item">
-            <a href="#" class="brand-link"><img src="./img/интерскол1.png" alt="Интерскон" width="200" height="76"></a>
+            <a href="#" class="brand-link"><img src="./img/interscol.png" alt="Интерскон" width="200" height="76"></a>
           </li>
           <li class="brand-item">
             <a href="#" class="brand-link"><img src="./img/hitachi.png" alt="Hitachi" width="169" height="37"></a>
@@ -386,8 +386,6 @@
       </div>
     </section>
 
-
-
     <section class="services">
       <h2 class="visually-hidden">Перечень услуг</h2>
       <div class="container">
@@ -400,7 +398,6 @@
           </p>
 
           <div class="services-columns">
-            <!-- -->
             <div class="services-buttons-column">
               <a href="#" class="services-button button-delivery">Доставка</a>
               <a href="#" class="services-button button-guarantee">Гарантия</a>
@@ -417,7 +414,7 @@
                 поднимая его на ваш этаж!
               </p>
               <div class="delivery-icon">
-                <img src="./img/Car.png" width="468" height="261" alt="Грузовик">
+                <img src="./img/car.png" width="468" height="261" alt="Грузовик">
               </div>
             </article>
             <article class="services-content-guarantee visually-hidden">
@@ -433,7 +430,7 @@
                 Дом уж восстановите как-нибудь сами.
               </p>
               <div class="delivery-icon-guarantee">
-                <img src="./img/gold_medal.png" width="389" height="283" alt="Качество">
+                <img src="./img/gold-medal.png" width="389" height="283" alt="Качество">
               </div>
             </article>
             <article class="services-content-credit visually-hidden">
@@ -463,7 +460,7 @@
               Мы можем доставить ваш товар в самые отдаленные точки России! <br>
               Техномарт работает со многими транспортными компаниями:
             </p>
-            
+
           </div>
           <ul class="info-list list-reset">
             <li>Деловые линии</li>
@@ -507,7 +504,7 @@
             <a href="#" class="footer-nav-link">Новости</a>
           </li>
           <li class="footer-nav-item">
-            <a href="/сatalog.html" class="footer-nav-link">Каталог</a>
+            <a href="catalog.html" class="footer-nav-link">Каталог</a>
           </li>
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Доставка</a>
@@ -587,6 +584,18 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal-basket modal-basket-show visually-hidden" id="item-dialog">
+    <h2 class="visually-hidden">Товар в корзине</h2>
+    <button class="modal-basket-close" type="button">Закрыть</button>
+    <div class="modal-basket-content">
+      <div class="modal-basket-message message-icon">Товар добавлен в корзину!</div>
+    </div>
+    <div class="modal-buttons">
+      <a class="button-modal" href="#">Оформить заказ</a>
+      <button class="button-modal button-cancel" type="button">Продолжить покупки</button>
+    </div>
+  </section>
 
   <section class="modal modal-show visually-hidden">
     <h2 class="visually-hidden">Напишите нам</h2>
