@@ -781,8 +781,9 @@ img {
   box-sizing: border-box;
   padding: 5px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
   overflow: hidden;
 }
@@ -812,6 +813,7 @@ img {
   margin-top: 8px;
   margin-bottom: 0;
   font-family: "PT Sans", Arial, serif;
+  flex-grow: 1;
 }
 
 .drill-old-price {
@@ -1403,14 +1405,20 @@ img {
   position: relative;
 }
 
+.user-info {
+  display: flex;
+  position: relative;
+}
+
 .user-block:active {
   opacity: 0.5;
 }
 
-.user-block svg {
+.user-info svg {
   position: absolute;
   left: 15px;
-  top: 14px;
+  top: 27%;
+  z-index: 1;
 }
 
 .user-logged {
@@ -1420,8 +1428,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   background-color: var(--basic-white);
-  padding: 12px 20px 12px 57px;
-  height: 23px;
+  padding: 12px 20px 7px 57px;
 }
 
 .user-logged:hover+svg path {
@@ -1483,6 +1490,7 @@ img {
   width: 37px;
   height: 47px;
   background-color: var(--basic-white);
+  height: 100%;
 }
 
 .log-out:hover {
