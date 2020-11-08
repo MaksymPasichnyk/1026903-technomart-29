@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -22,13 +22,14 @@
               поиск:
             </label>
             <input type="search" name="search" placeholder="Поиск:" autocomplete="off" id="search">
-            <button class="search-icon">
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="search-icon">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" fill-opacity="1"
                   d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
                   fill="white" />
               </svg>
-            </button>
+            </div>
           </form>
           <a href="#" class="bookmark-link">
             <svg class="bookmark-icon" width="16" height="17" viewBox="0 0 14 16" fill="none"
@@ -582,7 +583,7 @@
 
   <section class="modal-basket modal-basket-show visually-hidden" id="item-dialog">
     <h2 class="visually-hidden">Товар в корзине</h2>
-    <button class="modal-basket-close" type="button">Закрыть</button>
+    <button class="modal-basket-close button-cancel" type="button">Закрыть</button>
     <div class="modal-basket-content">
       <div class="modal-basket-message message-icon">Товар добавлен в корзину!</div>
     </div>
@@ -612,7 +613,8 @@
     <div class="modal-btn">
       <button class="main-btn main-btn-modal" type="submit" form="modalForm">ОТПРАВИТЬ</button>
     </div>
-    <button class="modal-close" id="formClose" type="button"><span class="visually-hidden">Закрыть форму</span><svg
+    <button class="modal-close" id="formClose" type="button"><span class="visually-hidden">Закрыть
+        форму</span><svg
         x="0px" y="0px" width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" fill="#EE3643">
         <path
           d="M13.273,10.5l7.422-7.422c0.389-0.389,0.389-1.025,0-1.414l-1.359-1.359c-0.389-0.389-1.025-0.389-1.414,0L10.5,7.727L3.078,0.305c-0.389-0.389-1.025-0.389-1.414,0L0.305,1.664c-0.389,0.389-0.389,1.025,0,1.414L7.727,10.5l-7.421,7.422c-0.389,0.389-0.389,1.025,0,1.414l1.359,1.359c0.389,0.389,1.025,0.389,1.414,0l7.422-7.422l7.422,7.422c0.389,0.389,1.025,0.389,1.414,0l1.359-1.359c0.389-0.389,0.389-1.025,0-1.414L13.273,10.5z">
@@ -641,6 +643,10 @@
         title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     </section>
   </div>
+
+  <script src="js/map.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/basket.js"></script>
 </body>
 
 </html>
