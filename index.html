@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -581,7 +581,7 @@
     </div>
   </footer>
 
-  <section class="modal-basket modal-basket-show visually-hidden" id="item-dialog">
+  <section class="modal-basket" id="item-dialog">
     <h2 class="visually-hidden">Товар в корзине</h2>
     <button class="modal-basket-close button-cancel" type="button">Закрыть</button>
     <div class="modal-basket-content">
@@ -593,7 +593,7 @@
     </div>
   </section>
 
-  <section class="modal modal-show visually-hidden">
+  <section class="modal">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="modal-form" id="modalForm" action="#" method="post">
       <label class="modal-label">
@@ -623,7 +623,7 @@
   </section>
 
   <div class="container">
-    <section class="modal-map visually-hidden">
+    <section class="modal-map">
       <button class="modal-close modal-close-map" type="button">
         <span class="visually-hidden">Закрыть карту</span>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21"
@@ -644,9 +644,7 @@
     </section>
   </div>
 
-  <script src="js/map.js"></script>
-  <script src="js/feedback.js"></script>
-  <script src="js/basket.js"></script>
+  <script src="js/modal.min.js"></script>
 </body>
 
 </html>
